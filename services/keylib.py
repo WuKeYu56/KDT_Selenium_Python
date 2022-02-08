@@ -1,10 +1,24 @@
 import time
 
 from selenium import webdriver
+from selenium.webdriver.support.ui import Select
+
 
 class KeyLib:
     def __init__(self, driver):
         self.driver = driver
+        # self.driver = webdriver.Chrome()
+
+    def deal_args(self, args):
+        """
+        功能：处理参数，分解出环境的how，what
+        :param args:
+        :return:
+        """
+        ele_list = args[0].split("=", 1)
+        how, what = ele_list[0], ele_list[1]
+        how = how.replace("_", " ")
+        return how, what
 
     def open(self, *args):
         """
@@ -27,15 +41,13 @@ class KeyLib:
         :param param:
         :return:
         """
-        ele_list = args[0].split("=", 1)
-        how, what = ele_list[0], ele_list[1]
+        how, what = self.deal_args(args)
         try:
             self.driver.find_element(how, what).send_keys(args[1])
             return True
         except Exception as e:
             print(e)
         return False
-
 
     def click(self, *args):
         """
@@ -44,14 +56,75 @@ class KeyLib:
         :param what:
         :return:
         """
-        ele_list = args[0].split("=", 1)
-        how, what = ele_list[0], ele_list[1]
+        how, what = self.deal_args(args)
         try:
             self.driver.find_element(how, what).click()
             return True
         except Exception as e:
             print(e)
         return False
+
+    def clear(self, *args):
+        """
+        清除输入框的内容
+        :param args:
+        :return:
+        """
+        how, what = self.deal_args(args)
+        try:
+            self.driver.find_element(how, what).clear()
+            return True
+        except Exception as e:
+            print(e)
+        return False
+
+
+    def select(self, *args):
+        """
+        功能：通过不同选项选择下拉框
+        :param args:
+        :return:
+        """
+        how, what = self.deal_args(args)
+        method = args[1].split(">", 1)[0]
+        content = args[1].split(">", 1)[1]
+        slt = Select(self.driver.find_element(how, what))
+        try:
+            if method == "index":
+                slt.select_by_index(int(content))
+            elif method == "value":
+                slt.select_by_value(content)
+            elif method == "text":
+                slt.select_by_visible_text(content)
+            else:
+                print("请输入正确的查找参数")
+            return True
+        except Exception as e:
+            print(e)
+        return False
+
+    def choose_alter(self, *args):
+        """
+        功能：进行弹窗操做
+        :param args:
+        :return:
+        """
+        try:
+            if args[0] == "确定":
+                self.driver.switch_to.alert.accept()
+            elif args[0] == "取消":
+                self.driver.switch_to.alert.dismiss()
+            elif args[0] == "写入":
+                dr = self.driver.switch_to.alert
+                dr.send_keys(args[1])
+                dr.accept()
+            else:
+                print("填入数据错误")
+            return True
+        except Exception as e:
+            print(e)
+        return False
+
 
     def should_contain(self, *args):
         """
@@ -70,8 +143,7 @@ class KeyLib:
         :param what:
         :return: boolean
         """
-        ele_list = args[0].split("=", 1)
-        how, what = ele_list[0], ele_list[1]
+        how, what = self.deal_args(args)
         try:
             self.driver.find_element(how, what)
             return True
@@ -87,12 +159,23 @@ class KeyLib:
         :param expected:
         :return: boolean
         """
-        ele_list = args[0].split("=", 1)
-        how, what = ele_list[0], ele_list[1]
+        how, what = self.deal_args(args)
         try:
             actual = self.driver.find_element(how, what).text
             if actual == args[1]:
                 return True
+        except:
+            pass
+        return False
+
+    def should_alter_text(self, *args):
+        try:
+            if args[0] == "contain":
+                if args[1] in self.driver.switch_to.alert.text:
+                    return True
+            elif args[0] == "eq":
+                if args[1] == self.driver.switch_to.alert.text:
+                    return True
         except:
             pass
         return False
@@ -103,9 +186,12 @@ class KeyLib:
         :param args: 等待的秒数
         :return:
         """
-        time.sleep(args[0])
-        return True
-
+        try:
+            time.sleep(int(args[0]))
+            return True
+        except:
+            pass
+        return False
 
 
 if __name__ == '__main__':

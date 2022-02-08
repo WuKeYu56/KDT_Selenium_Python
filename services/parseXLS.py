@@ -1,7 +1,8 @@
 import xlrd
 from KDT_MODULE.services.mycases import MyCases
 
-class Parse():
+
+class Parse:
     def __init__(self, xls_path):
         self.xls_path = xls_path
         self.book = None
@@ -34,6 +35,10 @@ class Parse():
                 return None
 
     def prepare_tc(self):
+        """
+        功能：将测试脚本读取出来，
+        :return:
+        """
         tcs = []
         rows = self.sheet.nrows
         for i in range(1, rows):
@@ -44,13 +49,13 @@ class Parse():
             tc.module = data[2]
             tc.tcname = data[3]
             tc.steps = self.deal_step(data[4])
-            tc.mark = data[5]
+            tc.mark = int(data[5])
             tcs.append(tc)
         return tcs
 
     def deal_step(self, stepstr):
         """
-        将传入的字符串解析为key, object, param三个数据，保存在字典中，添加进列表
+        功能：将传入的字符串解析为key, object, param三个数据，保存在字典中，添加进列表
         :param stepstr:
         :return:
         """
