@@ -54,12 +54,15 @@ class Excuter:
                             rlt = func(obj, step["param"])
                     rlts.append(rlt)
                     # time.sleep(1)
-                self.collector.get_result(rdict, rlts)
+                if False in rlts:
+                    result = "fail"
+                else:
+                    result = "pass"
+                self.collector.get_result(rdict, rlts, result)
                 self.driver.close()
-        self.collector.print_rltlist()
-        lis = []
-        return self.collector.rs
+        # self.collector.print_rltlist()
+
 
 if __name__ == '__main__':
     exe = Excuter()
-    print(exe.runner("chrome"))
+    exe.runner("chrome")

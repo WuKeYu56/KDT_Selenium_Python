@@ -7,8 +7,9 @@ class Collector:
         rdict['tc'] = tc  #用例的实例化对象存入字典
         return rdict
 
-    def get_result(self, rdict, rlts):
+    def get_result(self, rdict, rlts, rt):
         rdict['result'] = rlts  #用例的执行结果存入字典
+        rdict['rt'] = rt
         self.rs.append(rdict)
 
     def print_rltlist(self):
@@ -17,4 +18,4 @@ class Collector:
         :return:
         """
         for item in self.rs:
-            print(f"{item['tc'].title}: {item['result']}")
+            print(f"{item['tc'].title}: {item['result']}   {item['rt']}")

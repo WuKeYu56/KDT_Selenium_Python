@@ -2,9 +2,11 @@ import pytest
 
 from KDT_Selenium_Python.services.excuter import Excuter
 
+a = Excuter().runner("chrome")
 
+print(len(a))
 class Test_Case:
-    @pytest.mark.parametrize("rs", Excuter().runner("chrome"))
+    @pytest.mark.parametrize("rs", a)
     def test(self, rs):
         print(f"{rs['tc'].title}: {rs['result']}")
         if False in rs["result"]:
