@@ -1,0 +1,92 @@
+{
+  "uid" : "615bafff276951f4",
+  "name" : "test1[tc44]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "4692349c7257d7ae9999de355d7aabfa",
+  "time" : {
+    "start" : 1644422646603,
+    "stop" : 1644422646614,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "78436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 45, 'title': '【批次管理】（修改信息）缺少quantity的参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/editgoods', 'param': {'goodsid': '259', 'goodsserial': 'ME42613', 'goodsname': '印花方巾', 'unitprice': '108', 'totalprice': '588', 'costunitprice': '48.48', 'costtotalprice': '230.92'}, 'accept_type': 'text', 'expect': '500 Internal Server Error'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a35fd23ddb3c0d73",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'edit-fail' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+      "time" : {
+        "start" : 1644421509357,
+        "stop" : 1644421509388,
+        "duration" : 31
+      }
+    }, {
+      "uid" : "bff0c44e82c8159e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'edit-fail' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+      "time" : {
+        "start" : 1644421070988,
+        "stop" : 1644421071001,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "540e3bdd996369b4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'edit-fail' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+      "time" : {
+        "start" : 1644420708866,
+        "stop" : 1644420708904,
+        "duration" : 38
+      }
+    }, {
+      "uid" : "45567e1a887ad446",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'edit-fail' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+      "time" : {
+        "start" : 1644419653334,
+        "stop" : 1644419653456,
+        "duration" : 122
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "615bafff276951f4.json",
+  "parameterValues" : [ "{'id': 45, 'title': '【批次管理】（修改信息）缺少quantity的参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/editgoods', 'param': {'goodsid': '259', 'goodsserial': 'ME42613', 'goodsname': '印花方巾', 'unitprice': '108', 'totalprice': '588', 'costunitprice': '48.48', 'costtotalprice': '230.92'}, 'accept_type': 'text', 'expect': '500 Internal Server Error'}" ]
+}

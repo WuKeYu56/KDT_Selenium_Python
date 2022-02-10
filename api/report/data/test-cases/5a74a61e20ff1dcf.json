@@ -1,0 +1,88 @@
+{
+  "uid" : "5a74a61e20ff1dcf",
+  "name" : "test1[tc25]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "d51f5fb756b7ef2daaa5003010612d51",
+  "time" : {
+    "start" : 1644422645736,
+    "stop" : 1644422645806,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "78436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 26, 'title': '【销售出库】(货品操作）缺少goodsname参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/detail', 'param': {'sellsumid': '347', 'barcode': '11111111', 'goodsserial': 'M3Q1498B', 'goodssize': '30', 'unitprice': '89', 'discountratio': '68', 'discountprice': '60.52', 'buyquantity': '1', 'subtotal': '60.52'}, 'accept_type': 'text', 'expect': '500 Internal Server Error'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "154d698b78d18a7e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644421508386,
+        "stop" : 1644421508403,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "7d4484612c50b800",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644421070288,
+        "stop" : 1644421070324,
+        "duration" : 36
+      }
+    }, {
+      "uid" : "bad4ff016308018a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644420708098,
+        "stop" : 1644420708149,
+        "duration" : 51
+      }
+    }, {
+      "uid" : "d5cce4603df057ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644419652676,
+        "stop" : 1644419652692,
+        "duration" : 16
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5a74a61e20ff1dcf.json",
+  "parameterValues" : [ "{'id': 26, 'title': '【销售出库】(货品操作）缺少goodsname参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/detail', 'param': {'sellsumid': '347', 'barcode': '11111111', 'goodsserial': 'M3Q1498B', 'goodssize': '30', 'unitprice': '89', 'discountratio': '68', 'discountprice': '60.52', 'buyquantity': '1', 'subtotal': '60.52'}, 'accept_type': 'text', 'expect': '500 Internal Server Error'}" ]
+}

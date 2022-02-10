@@ -1,0 +1,54 @@
+{
+  "uid" : "30174c1141f7fb8d",
+  "name" : "test1[tc50]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "8108f5d368c607d78f223e91148484cb",
+  "time" : {
+    "start" : 1644420709139,
+    "stop" : 1644420709167,
+    "duration" : 28
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "69612-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 51, 'title': '【批次管理】（删除商品）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/goods/deletegoods', 'param': {'goodsid': '28949'}, 'accept_type': 'text', 'expect': '500 Internal Server Error'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "30174c1141f7fb8d.json",
+  "parameterValues" : [ "{'id': 51, 'title': '【批次管理】（删除商品）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/goods/deletegoods', 'param': {'goodsid': '28949'}, 'accept_type': 'text', 'expect': '500 Internal Server Error'}" ]
+}

@@ -1,0 +1,252 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test[rs0]",
+    "uid" : "940b7cea1b43b88",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024218,
+      "stop" : 1644423024219,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5BCF48>, 'result': [True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs1]",
+    "uid" : "4a4c9f09c5581ebc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024231,
+      "stop" : 1644423024231,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C2548>, 'result': [True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs2]",
+    "uid" : "efa2809a760526a2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024236,
+      "stop" : 1644423024237,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C28C8>, 'result': [True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs3]",
+    "uid" : "d415e22661dd8d5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024244,
+      "stop" : 1644423024245,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C2C48>, 'result': [True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs4]",
+    "uid" : "22e1fd2735c4261e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024250,
+      "stop" : 1644423024250,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C2FC8>, 'result': [True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs5]",
+    "uid" : "84ca0d645d314307",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024254,
+      "stop" : 1644423024255,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C6388>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs6]",
+    "uid" : "bc6951ccf85cf467",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024258,
+      "stop" : 1644423024259,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C6748>, 'result': [True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs7]",
+    "uid" : "58913b4acf558220",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024266,
+      "stop" : 1644423024267,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C6D08>, 'result': [True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs8]",
+    "uid" : "ffd87c09929639fe",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024271,
+      "stop" : 1644423024271,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C92C8>, 'result': [True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs9]",
+    "uid" : "34d92515ccc08403",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024308,
+      "stop" : 1644423024308,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C2508>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs10]",
+    "uid" : "41fbd39dc0046866",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024312,
+      "stop" : 1644423024312,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C9748>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs11]",
+    "uid" : "16d03ab127b74104",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024341,
+      "stop" : 1644423024341,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C41C8>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs12]",
+    "uid" : "e3c2ef831c272ade",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024346,
+      "stop" : 1644423024346,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C48C8>, 'result': [True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs13]",
+    "uid" : "25a535f00d0684c0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024349,
+      "stop" : 1644423024349,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C4848>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs14]",
+    "uid" : "e41f351f5b43fba4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024353,
+      "stop" : 1644423024353,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C4808>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs15]",
+    "uid" : "512ea68c4e1711e1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024357,
+      "stop" : 1644423024357,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5D1488>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs16]",
+    "uid" : "39fc2b86cef3a17c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024361,
+      "stop" : 1644423024362,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5D1B08>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  }, {
+    "name" : "test[rs17]",
+    "uid" : "f2d20fe59f01eca",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1644423024366,
+      "stop" : 1644423024366,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5D2908>, 'result': [True, True, True, True, True, True, True, True, True, False]}" ]
+  }, {
+    "name" : "test[rs18]",
+    "uid" : "967695006fd1cc14",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1644423024563,
+      "stop" : 1644423024563,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5D7048>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+  } ]
+}

@@ -1,0 +1,92 @@
+{
+  "uid" : "8b2d421482551b9e",
+  "name" : "test1[tc56]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "b71e7ba50afc60b4cc9f723967040b5c",
+  "time" : {
+    "start" : 1644422646950,
+    "stop" : 1644422646962,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "78436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 57, 'title': '【商品入库】（查询导入信息）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/store/queryinfo', 'param': {'batchname': 'GB20211111567', 'goodsserial': 'M4S0961D'}, 'accept_type': 'text', 'expect': '丙用裆罗口裤'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "75e636dc4dbd7662",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '丙用裆罗口裤' in '[]'",
+      "time" : {
+        "start" : 1644421509849,
+        "stop" : 1644421509860,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "fc74c2ea9480ae6b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '丙用裆罗口裤' in '[]'",
+      "time" : {
+        "start" : 1644421071222,
+        "stop" : 1644421071232,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "1c91376c9b72317d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '丙用裆罗口裤' in '[]'",
+      "time" : {
+        "start" : 1644420709294,
+        "stop" : 1644420709305,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "6dae640d75efcd61",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '丙用裆罗口裤' in '[]'",
+      "time" : {
+        "start" : 1644419653830,
+        "stop" : 1644419653842,
+        "duration" : 12
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8b2d421482551b9e.json",
+  "parameterValues" : [ "{'id': 57, 'title': '【商品入库】（查询导入信息）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/store/queryinfo', 'param': {'batchname': 'GB20211111567', 'goodsserial': 'M4S0961D'}, 'accept_type': 'text', 'expect': '丙用裆罗口裤'}" ]
+}

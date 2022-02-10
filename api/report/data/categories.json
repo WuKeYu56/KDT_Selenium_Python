@@ -1,0 +1,175 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '操作失败' in '2500'",
+      "children" : [ {
+        "name" : "test1[tc20]",
+        "uid" : "49e02766f01310c6",
+        "parentUid" : "a2b0a2908930edfa0a680e276ed03454",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422644602,
+          "stop" : 1644422644663,
+          "duration" : 61
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 21, 'title': '【销售出库】(会员操作）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/sell/summary', 'param': {'customerphone': '15983123450', 'paymethod': '微信', 'totalprice': '50', 'creditratio': '2.0', 'creditsum': '101', 'tickettype': '无', 'ticketsum': '11', 'oldcredit': '0'}, 'accept_type': 'text', 'expect': '操作失败'}" ]
+      } ],
+      "uid" : "a2b0a2908930edfa0a680e276ed03454"
+    }, {
+      "name" : "AssertionError: assert '操作成功' in '2501'",
+      "children" : [ {
+        "name" : "test1[tc21]",
+        "uid" : "bd0de51e32e1a2c6",
+        "parentUid" : "bee48a1870e3326777807ca77f07c075",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422644736,
+          "stop" : 1644422644749,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 22, 'title': '【销售出库】(会员操作）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/summary', 'param': {'customerphone': '15983123450', 'paymethod': '微信', 'totalprice': '50', 'creditratio': '2.0', 'creditsum': '101', 'tickettype': '无', 'ticketsum': '11', 'oldcredit': '1'}, 'accept_type': 'text', 'expect': '操作成功'}" ]
+      } ],
+      "uid" : "bee48a1870e3326777807ca77f07c075"
+    }, {
+      "name" : "AssertionError: assert 'pay-fail' in 'pay-successful'",
+      "children" : [ {
+        "name" : "test1[tc32]",
+        "uid" : "1b88be2f5a95103e",
+        "parentUid" : "9da0aabab016dc3cdce8bc948c2527b8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422646148,
+          "stop" : 1644422646162,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 33, 'title': '【销售出库】(货品操作）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/sell/detail', 'param': {'sellsumid': '347', 'barcode': '11111111', 'goodsserial': 'M3Q1498B', 'goodsname': '米乐果后开连衣裙', 'goodssize': '30', 'unitprice': '89', 'discountratio': '68', 'discountprice': '60.52', 'buyquantity': '1', 'subtotal': '60.52'}, 'accept_type': 'text', 'expect': 'pay-fail'}" ]
+      } ],
+      "uid" : "9da0aabab016dc3cdce8bc948c2527b8"
+    }, {
+      "name" : "AssertionError: assert '操作失败' in '[{\"createtime\":\"2018-05-08 12:10:25\",\"quantity\":6,\"costunitprice\":99.864,\"goodsid\":258,\"goodsserial\":\"ME42337\",\"total...,\"unitprice\":89.0,\"userid\":1,\"batchname\":\"GB20180508\",\"costtotalprice\":243.504,\"barcode\":\"11111111\",\"goodstype\":\"衣服\"}]'",
+      "children" : [ {
+        "name" : "test1[tc34]",
+        "uid" : "2beadc2b9725a87c",
+        "parentUid" : "880b2ffaed35199b08165748417e022f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422646196,
+          "stop" : 1644422646262,
+          "duration" : 66
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 35, 'title': '【批次管理】（查询批次）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/goods/querybatch', 'param': {'batchname': 'GB20180508'}, 'accept_type': 'text', 'expect': '操作失败'}" ]
+      } ],
+      "uid" : "880b2ffaed35199b08165748417e022f"
+    }, {
+      "name" : "AssertionError: assert '操作失败' in '{\"createtime\":\"2022-02-09 23:45:09\",\"quantity\":188,\"costunitprice\":48.48,\"goodsid\":259,\"goodsserial\":\"ME42613\",\"total...e\":\"印花方巾\",\"unitprice\":108.0,\"userid\":1,\"batchname\":\"GB20180508\",\"costtotalprice\":230.97,\"barcode\":\"0\",\"goodstype\":\"0\"}'",
+      "children" : [ {
+        "name" : "test1[tc37]",
+        "uid" : "7262df44a46258cb",
+        "parentUid" : "1e1ccc8e91ead9ac9556de930a70322a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422646345,
+          "stop" : 1644422646356,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 38, 'title': '【批次管理】（查询商品信息)   请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/goods/querygoods', 'param': {'goodsid': '259'}, 'accept_type': 'text', 'expect': '操作失败'}" ]
+      } ],
+      "uid" : "1e1ccc8e91ead9ac9556de930a70322a"
+    }, {
+      "name" : "AssertionError: assert '操作失败' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+      "children" : [ {
+        "name" : "test1[tc38]",
+        "uid" : "2aca81a2e45e06a7",
+        "parentUid" : "048e93061fe78c203169b37902eb0431",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422646364,
+          "stop" : 1644422646389,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 39, 'title': '【批次管理】（查询商品信息)   缺少goodsid参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/querygoods', 'param': None, 'accept_type': 'text', 'expect': '操作失败'}" ]
+      } ],
+      "uid" : "048e93061fe78c203169b37902eb0431"
+    }, {
+      "name" : "AssertionError: assert 'edit-fail' in 'edit-successful'",
+      "children" : [ {
+        "name" : "test1[tc40]",
+        "uid" : "1e81e49807f0f356",
+        "parentUid" : "96c6dc23ced073c445265fa8c468262d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422646431,
+          "stop" : 1644422646442,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 41, 'title': '【批次管理】（修改信息）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/goods/editgoods', 'param': {'goodsid': '259', 'goodsserial': 'ME42613', 'goodsname': '印花方巾', 'quantity': '188', 'unitprice': '108', 'totalprice': '588', 'costunitprice': '48.48', 'costtotalprice': '230.88'}, 'accept_type': 'text', 'expect': 'edit-fail'}" ]
+      } ],
+      "uid" : "96c6dc23ced073c445265fa8c468262d"
+    }, {
+      "name" : "AssertionError: assert 'delete-successful' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+      "children" : [ {
+        "name" : "test1[tc52]",
+        "uid" : "1fc47474cd808c34",
+        "parentUid" : "74a6fa29ec7a905e0c8aebf801d88eb5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422646832,
+          "stop" : 1644422646863,
+          "duration" : 31
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 53, 'title': '【批次管理】（删除商品）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/deletegoods', 'param': {'goodsid': '28949'}, 'accept_type': 'text', 'expect': 'delete-successful'}" ]
+      } ],
+      "uid" : "74a6fa29ec7a905e0c8aebf801d88eb5"
+    }, {
+      "name" : "AssertionError: assert '操作失败' in '[{\"quantity\":18,\"inputsize\":\"0\",\"goodsname\":\"丙用裆罗口裤\",\"unitprice\":108.0,\"barcode\":\"0\",\"goodstype\":\"0\"}]'",
+      "children" : [ {
+        "name" : "test1[tc53]",
+        "uid" : "1d5d5bc39cf29b1b",
+        "parentUid" : "e850afdd7dfa2f1bb219c7f7637061b9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422646872,
+          "stop" : 1644422646883,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 54, 'title': '【商品入库】（查询导入信息）缺少batchname参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/store/queryinfo', 'param': {'goodsserial': 'M4S0962D'}, 'accept_type': 'text', 'expect': '操作失败'}" ]
+      }, {
+        "name" : "test1[tc55]",
+        "uid" : "3c5469aad7b084ce",
+        "parentUid" : "e850afdd7dfa2f1bb219c7f7637061b9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644422646930,
+          "stop" : 1644422646941,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'id': 56, 'title': '【商品入库】（查询导入信息）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/store/queryinfo', 'param': {'batchname': 'GB20211111567', 'goodsserial': 'M4S0961D'}, 'accept_type': 'text', 'expect': '操作失败'}" ]
+      } ],
+      "uid" : "e850afdd7dfa2f1bb219c7f7637061b9"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

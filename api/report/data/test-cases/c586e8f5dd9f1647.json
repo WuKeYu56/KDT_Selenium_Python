@@ -1,0 +1,56 @@
+{
+  "uid" : "c586e8f5dd9f1647",
+  "name" : "test1[tc52]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "e129575fd540652ebb3a871846ca8715",
+  "time" : {
+    "start" : 1644421509754,
+    "stop" : 1644421509766,
+    "duration" : 12
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'delete-successful' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+  "statusTrace" : "self = <interface.api_test.TestCase object at 0x000001F2B9649D48>\ntc = {'accept_type': 'text', 'expect': 'delete-successful', 'id': 53, 'method': 'post', ...}\n\n    @pytest.mark.parametrize(\"tc\", ParseXls(\"./data/case3.xls\").prepare_tc())\n    def test1(self, tc):\n        act = DoRequests().get_act(tc[\"precondition\"], tc[\"method\"], tc[\"url\"], tc[\"param\"], tc[\"accept_type\"])\n        expect = tc[\"expect\"]\n        if tc[\"accept_type\"] == \"json\":\n            assert act.get(expect[0]) == expect[1]\n        if tc[\"accept_type\"] == \"text\":\n>           assert expect in act\nE           assert 'delete-successful' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"\n\napi_test.py:18: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "70296-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 53, 'title': '【批次管理】（删除商品）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/deletegoods', 'param': {'goodsid': '28949'}, 'accept_type': 'text', 'expect': 'delete-successful'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c586e8f5dd9f1647.json",
+  "parameterValues" : [ "{'id': 53, 'title': '【批次管理】（删除商品）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/deletegoods', 'param': {'goodsid': '28949'}, 'accept_type': 'text', 'expect': 'delete-successful'}" ]
+}

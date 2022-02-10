@@ -1,0 +1,98 @@
+{
+  "uid" : "2aca81a2e45e06a7",
+  "name" : "test1[tc38]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "9a4774320b55a96e2d304c812eb7c0a6",
+  "time" : {
+    "start" : 1644422646364,
+    "stop" : 1644422646389,
+    "duration" : 25
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '操作失败' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+  "statusTrace" : "self = <interface.api_test.TestCase object at 0x0000025F8B8E1048>\ntc = {'accept_type': 'text', 'expect': '操作失败', 'id': 39, 'method': 'post', ...}\n\n    @pytest.mark.parametrize(\"tc\", ParseXls(\"./data/case3.xls\").prepare_tc())\n    def test1(self, tc):\n        act = DoRequests().get_act(tc[\"precondition\"], tc[\"method\"], tc[\"url\"], tc[\"param\"], tc[\"accept_type\"])\n        expect = tc[\"expect\"]\n        if tc[\"accept_type\"] == \"json\":\n            assert act.get(expect[0]) == expect[1]\n        if tc[\"accept_type\"] == \"text\":\n>           assert expect in act\nE           assert '操作失败' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"\n\napi_test.py:18: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "78436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 39, 'title': '【批次管理】（查询商品信息)   缺少goodsid参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/querygoods', 'param': None, 'accept_type': 'text', 'expect': '操作失败'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "51b46236cd12b3d7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作失败' in '{\"createtime\":\"2022-02-09 23:37:51\",\"quantity\":188,\"costunitprice\":48.48,\"goodsid\":259,\"goodsserial\":\"ME42613\",\"total...e\":\"印花方巾\",\"unitprice\":108.0,\"userid\":1,\"batchname\":\"GB20180508\",\"costtotalprice\":230.97,\"barcode\":\"0\",\"goodstype\":\"0\"}'",
+      "time" : {
+        "start" : 1644421509144,
+        "stop" : 1644421509174,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "db564aadf38581ac",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作失败' in '{\"createtime\":\"2022-02-09 23:31:49\",\"quantity\":188,\"costunitprice\":48.48,\"goodsid\":259,\"goodsserial\":\"ME42613\",\"total...e\":\"印花方巾\",\"unitprice\":108.0,\"userid\":1,\"batchname\":\"GB20180508\",\"costtotalprice\":230.97,\"barcode\":\"0\",\"goodstype\":\"0\"}'",
+      "time" : {
+        "start" : 1644421070823,
+        "stop" : 1644421070833,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "3d2a84af1652000d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作失败' in '{\"createtime\":\"2022-02-09 23:14:13\",\"quantity\":188,\"costunitprice\":48.48,\"goodsid\":259,\"goodsserial\":\"ME42613\",\"total...e\":\"印花方巾\",\"unitprice\":108.0,\"userid\":1,\"batchname\":\"GB20180508\",\"costtotalprice\":230.97,\"barcode\":\"0\",\"goodstype\":\"0\"}'",
+      "time" : {
+        "start" : 1644420708641,
+        "stop" : 1644420708653,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "74216e4ff9677a7e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作失败' in '{\"createtime\":\"2022-02-09 23:10:07\",\"quantity\":188,\"costunitprice\":48.48,\"goodsid\":259,\"goodsserial\":\"ME42613\",\"total...e\":\"印花方巾\",\"unitprice\":108.0,\"userid\":1,\"batchname\":\"GB20180508\",\"costtotalprice\":230.97,\"barcode\":\"0\",\"goodstype\":\"0\"}'",
+      "time" : {
+        "start" : 1644419653128,
+        "stop" : 1644419653140,
+        "duration" : 12
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2aca81a2e45e06a7.json",
+  "parameterValues" : [ "{'id': 39, 'title': '【批次管理】（查询商品信息)   缺少goodsid参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/querygoods', 'param': None, 'accept_type': 'text', 'expect': '操作失败'}" ]
+}

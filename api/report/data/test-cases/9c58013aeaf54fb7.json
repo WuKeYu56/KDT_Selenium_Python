@@ -1,0 +1,54 @@
+{
+  "uid" : "9c58013aeaf54fb7",
+  "name" : "test1[tc33]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "5c7d315f1e4a926aaad1e3fa732bd58f",
+  "time" : {
+    "start" : 1644420708496,
+    "stop" : 1644420708510,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "69612-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 34, 'title': '【销售出库】(货品操作）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/detail', 'param': {'sellsumid': '347', 'barcode': '11111111', 'goodsserial': 'M3Q1498B', 'goodsname': '米乐果后开连衣裙', 'goodssize': '30', 'unitprice': '89', 'discountratio': '68', 'discountprice': '60.52', 'buyquantity': '1', 'subtotal': '60.53'}, 'accept_type': 'text', 'expect': 'pay-successful'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9c58013aeaf54fb7.json",
+  "parameterValues" : [ "{'id': 34, 'title': '【销售出库】(货品操作）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/detail', 'param': {'sellsumid': '347', 'barcode': '11111111', 'goodsserial': 'M3Q1498B', 'goodsname': '米乐果后开连衣裙', 'goodssize': '30', 'unitprice': '89', 'discountratio': '68', 'discountprice': '60.52', 'buyquantity': '1', 'subtotal': '60.53'}, 'accept_type': 'text', 'expect': 'pay-successful'}" ]
+}

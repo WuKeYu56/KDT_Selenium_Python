@@ -1,0 +1,98 @@
+{
+  "uid" : "bd0de51e32e1a2c6",
+  "name" : "test1[tc21]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "76ce4850a3a6567c2b2c12016c9ff084",
+  "time" : {
+    "start" : 1644422644736,
+    "stop" : 1644422644749,
+    "duration" : 13
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '操作成功' in '2501'",
+  "statusTrace" : "self = <interface.api_test.TestCase object at 0x0000025F8A8414C8>\ntc = {'accept_type': 'text', 'expect': '操作成功', 'id': 22, 'method': 'post', ...}\n\n    @pytest.mark.parametrize(\"tc\", ParseXls(\"./data/case3.xls\").prepare_tc())\n    def test1(self, tc):\n        act = DoRequests().get_act(tc[\"precondition\"], tc[\"method\"], tc[\"url\"], tc[\"param\"], tc[\"accept_type\"])\n        expect = tc[\"expect\"]\n        if tc[\"accept_type\"] == \"json\":\n            assert act.get(expect[0]) == expect[1]\n        if tc[\"accept_type\"] == \"text\":\n>           assert expect in act\nE           AssertionError: assert '操作成功' in '2501'\n\napi_test.py:18: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "78436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 22, 'title': '【销售出库】(会员操作）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/summary', 'param': {'customerphone': '15983123450', 'paymethod': '微信', 'totalprice': '50', 'creditratio': '2.0', 'creditsum': '101', 'tickettype': '无', 'ticketsum': '11', 'oldcredit': '1'}, 'accept_type': 'text', 'expect': '操作成功'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ad39f07a72274f23",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作成功' in '2497'",
+      "time" : {
+        "start" : 1644421508272,
+        "stop" : 1644421508283,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "6ca36d1df69e2b2e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作成功' in '2495'",
+      "time" : {
+        "start" : 1644421070167,
+        "stop" : 1644421070178,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "17b2e451b670b82c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作成功' in '2493'",
+      "time" : {
+        "start" : 1644420707958,
+        "stop" : 1644420707989,
+        "duration" : 31
+      }
+    }, {
+      "uid" : "487ef743df8c7912",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作成功' in '<!DOCTYPE html>\\n<html>\\n<head lang=\"en\">\\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"/>\\n ...4 right\">\\n                联系电话：028-84247107\\n            </div>\\n        </div>\\n    </div>\\n</div>\\n</body>\\n</html>'",
+      "time" : {
+        "start" : 1644419652546,
+        "stop" : 1644419652564,
+        "duration" : 18
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "bd0de51e32e1a2c6.json",
+  "parameterValues" : [ "{'id': 22, 'title': '【销售出库】(会员操作）正常传参', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/summary', 'param': {'customerphone': '15983123450', 'paymethod': '微信', 'totalprice': '50', 'creditratio': '2.0', 'creditsum': '101', 'tickettype': '无', 'ticketsum': '11', 'oldcredit': '1'}, 'accept_type': 'text', 'expect': '操作成功'}" ]
+}

@@ -187,7 +187,7 @@ class KeyLib:
         :return:
         """
         try:
-            time.sleep(int(args[0]))
+            time.sleep(float(args[0]))
             return True
         except:
             pass

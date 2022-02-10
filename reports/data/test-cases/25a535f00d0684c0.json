@@ -1,0 +1,56 @@
+{
+  "uid" : "25a535f00d0684c0",
+  "name" : "test[rs13]",
+  "fullName" : "test_case.Test_Case#test",
+  "historyId" : "cf621951df8b3a5450e53644cba7d239",
+  "time" : {
+    "start" : 1644423024349,
+    "stop" : 1644423024349,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "72344-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "rs",
+    "value" : "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C4848>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True, True]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "25a535f00d0684c0.json",
+  "parameterValues" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5C4848>, 'result': [True, True, True, True, True, True, True, True, True, True, True, True, True]}" ]
+}

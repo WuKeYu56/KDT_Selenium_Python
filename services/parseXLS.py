@@ -1,5 +1,5 @@
 import xlrd
-from KDT_MODULE.services.mycases import MyCases
+from KDT_Selenium_Python.services.mycases import MyCases
 
 
 class Parse:

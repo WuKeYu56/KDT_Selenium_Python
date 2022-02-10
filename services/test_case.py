@@ -1,6 +1,6 @@
 import pytest
 
-from KDT_MODULE.services.excuter import Excuter
+from KDT_Selenium_Python.services.excuter import Excuter
 
 
 class Test_Case:
@@ -13,7 +13,6 @@ class Test_Case:
             result = True
         assert result is True
 
-
 if __name__ == '__main__':
-    pytest.main(["-vs", "./test_case.py::Test_Case"])
+    pytest.main(["-vs", "./test_case.py::Test_Case", "--alluredir=../temps/"])
 

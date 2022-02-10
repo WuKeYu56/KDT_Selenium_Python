@@ -1,0 +1,54 @@
+{
+  "uid" : "d8e492981c5e93a8",
+  "name" : "test1[tc1]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "9e56618ffd7d7728927fd3d8556a3350",
+  "time" : {
+    "start" : 1644421507535,
+    "stop" : 1644421507540,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "70296-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 2, 'title': '【登录】用户名输入错误', 'precondition': '', 'method': 'post', 'url': 'http://localhost:8080/woniusales/user/login', 'param': {'username': 'admin123', 'password': 'milor123', 'verifycode': '0000'}, 'accept_type': 'text', 'expect': 'login-fail'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d8e492981c5e93a8.json",
+  "parameterValues" : [ "{'id': 2, 'title': '【登录】用户名输入错误', 'precondition': '', 'method': 'post', 'url': 'http://localhost:8080/woniusales/user/login', 'param': {'username': 'admin123', 'password': 'milor123', 'verifycode': '0000'}, 'accept_type': 'text', 'expect': 'login-fail'}" ]
+}

@@ -1,9 +1,9 @@
 import time
 
 from selenium import webdriver
-from KDT_MODULE.services.parseXLS import Parse
-from KDT_MODULE.services.keylib import KeyLib
-from KDT_MODULE.services.collector import Collector
+from KDT_Selenium_Python.services.parseXLS import Parse
+from KDT_Selenium_Python.services.keylib import KeyLib
+from KDT_Selenium_Python.services.collector import Collector
 
 
 class Excuter:
@@ -57,6 +57,7 @@ class Excuter:
                 self.collector.get_result(rdict, rlts)
                 self.driver.close()
         self.collector.print_rltlist()
+        lis = []
         return self.collector.rs
 
 if __name__ == '__main__':

@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert False is True",
+      "children" : [ {
+        "name" : "test[rs17]",
+        "uid" : "f2d20fe59f01eca",
+        "parentUid" : "b753cc2371eaf4f8dcc68f5839b988a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1644423024366,
+          "stop" : 1644423024366,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'tc': <KDT_MODULE.services.mycases.MyCases object at 0x000001C83D5D2908>, 'result': [True, True, True, True, True, True, True, True, True, False]}" ]
+      } ],
+      "uid" : "b753cc2371eaf4f8dcc68f5839b988a8"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

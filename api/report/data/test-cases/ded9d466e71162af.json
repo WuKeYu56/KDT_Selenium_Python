@@ -1,0 +1,89 @@
+{
+  "uid" : "ded9d466e71162af",
+  "name" : "test1[tc3]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "24f970d94f260e03b225778d3cddae2f",
+  "time" : {
+    "start" : 1644422643995,
+    "stop" : 1644422644082,
+    "duration" : 87
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "78436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 4, 'title': '【销售出库】(主页)请求方式改为post', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell', 'param': None, 'accept_type': 'text', 'expect': '是否统一修改折扣比例'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d7c4d7d98a56a85c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644421507564,
+        "stop" : 1644421507592,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "7b05b49d1d6d740",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644421069427,
+        "stop" : 1644421069459,
+        "duration" : 32
+      }
+    }, {
+      "uid" : "c0bdb87be6c99e77",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644420707130,
+        "stop" : 1644420707158,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "5e22a0a536ee1b79",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '是否统一修改折扣比例' in '<!DOCTYPE html>\\n<html>\\n<head lang=\"en\">\\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"/>\\n ...4 right\">\\n                联系电话：028-84247107\\n            </div>\\n        </div>\\n    </div>\\n</div>\\n</body>\\n</html>'",
+      "time" : {
+        "start" : 1644419651839,
+        "stop" : 1644419651860,
+        "duration" : 21
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ded9d466e71162af.json",
+  "parameterValues" : [ "{'id': 4, 'title': '【销售出库】(主页)请求方式改为post', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell', 'param': None, 'accept_type': 'text', 'expect': '是否统一修改折扣比例'}" ]
+}

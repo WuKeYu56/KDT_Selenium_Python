@@ -1,0 +1,56 @@
+{
+  "uid" : "4531155598f4bf9f",
+  "name" : "test1[tc40]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "8e9195bb3e473426e11785103e6a873f",
+  "time" : {
+    "start" : 1644421070856,
+    "stop" : 1644421070869,
+    "duration" : 13
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'edit-fail' in 'edit-successful'",
+  "statusTrace" : "self = <interface.api_test.TestCase object at 0x00000210A7F39D88>\ntc = {'accept_type': 'text', 'expect': 'edit-fail', 'id': 41, 'method': 'get', ...}\n\n    @pytest.mark.parametrize(\"tc\", ParseXls(\"./data/case3.xls\").prepare_tc())\n    def test1(self, tc):\n        act = DoRequests().get_act(tc[\"precondition\"], tc[\"method\"], tc[\"url\"], tc[\"param\"], tc[\"accept_type\"])\n        expect = tc[\"expect\"]\n        if tc[\"accept_type\"] == \"json\":\n            assert act.get(expect[0]) == expect[1]\n        if tc[\"accept_type\"] == \"text\":\n>           assert expect in act\nE           AssertionError: assert 'edit-fail' in 'edit-successful'\n\napi_test.py:18: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "51068-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 41, 'title': '【批次管理】（修改信息）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/goods/editgoods', 'param': {'goodsid': '259', 'goodsserial': 'ME42613', 'goodsname': '印花方巾', 'quantity': '188', 'unitprice': '108', 'totalprice': '588', 'costunitprice': '48.48', 'costtotalprice': '230.88'}, 'accept_type': 'text', 'expect': 'edit-fail'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4531155598f4bf9f.json",
+  "parameterValues" : [ "{'id': 41, 'title': '【批次管理】（修改信息）请求方式改为get', 'precondition': '已登录', 'method': 'get', 'url': 'http://localhost:8080/woniusales/goods/editgoods', 'param': {'goodsid': '259', 'goodsserial': 'ME42613', 'goodsname': '印花方巾', 'quantity': '188', 'unitprice': '108', 'totalprice': '588', 'costunitprice': '48.48', 'costtotalprice': '230.88'}, 'accept_type': 'text', 'expect': 'edit-fail'}" ]
+}

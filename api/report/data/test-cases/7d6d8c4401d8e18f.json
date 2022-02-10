@@ -1,0 +1,92 @@
+{
+  "uid" : "7d6d8c4401d8e18f",
+  "name" : "test1[tc7]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "a8b781506e4f1d381b1c1f44beb2d2d6",
+  "time" : {
+    "start" : 1644422644200,
+    "stop" : 1644422644273,
+    "duration" : 73
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "78436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 8, 'title': '【销售出库】(输入条码)输入不存在的条码', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/barcode', 'param': {'barcode': '11111112'}, 'accept_type': 'text', 'expect': '[]'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "85277f5a2762b06",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作失败' in '[]'",
+      "time" : {
+        "start" : 1644421507724,
+        "stop" : 1644421507735,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "71901eeafe268219",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作失败' in '[]'",
+      "time" : {
+        "start" : 1644421069611,
+        "stop" : 1644421069623,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "24e31dbd61943c65",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作失败' in '[]'",
+      "time" : {
+        "start" : 1644420707317,
+        "stop" : 1644420707328,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "9f0477b250c76392",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '操作失败' in '[]'",
+      "time" : {
+        "start" : 1644419652030,
+        "stop" : 1644419652044,
+        "duration" : 14
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7d6d8c4401d8e18f.json",
+  "parameterValues" : [ "{'id': 8, 'title': '【销售出库】(输入条码)输入不存在的条码', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/barcode', 'param': {'barcode': '11111112'}, 'accept_type': 'text', 'expect': '[]'}" ]
+}

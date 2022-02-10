@@ -1,0 +1,54 @@
+{
+  "uid" : "ae6b021770f2b6c7",
+  "name" : "test1[tc17]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "43932d1cdcf7787c1e4c79dd1dff1769",
+  "time" : {
+    "start" : 1644421070075,
+    "stop" : 1644421070088,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "51068-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 18, 'title': '【销售出库】(会员操作)缺少tickettype参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/summary', 'param': {'customerphone': '15983123450', 'paymethod': '微信', 'totalprice': '50', 'creditratio': '2.0', 'creditsum': '101', 'ticketsum': '10', 'oldcredit': '0'}, 'accept_type': 'text', 'expect': '500 Internal Server Error'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ae6b021770f2b6c7.json",
+  "parameterValues" : [ "{'id': 18, 'title': '【销售出库】(会员操作)缺少tickettype参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/sell/summary', 'param': {'customerphone': '15983123450', 'paymethod': '微信', 'totalprice': '50', 'creditratio': '2.0', 'creditsum': '101', 'ticketsum': '10', 'oldcredit': '0'}, 'accept_type': 'text', 'expect': '500 Internal Server Error'}" ]
+}

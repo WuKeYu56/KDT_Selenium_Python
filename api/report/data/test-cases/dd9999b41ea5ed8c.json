@@ -1,0 +1,56 @@
+{
+  "uid" : "dd9999b41ea5ed8c",
+  "name" : "test1[tc45]",
+  "fullName" : "api_test.TestCase#test1",
+  "historyId" : "1fc51e23ec1bc01bebd63ced288ad6c4",
+  "time" : {
+    "start" : 1644420708913,
+    "stop" : 1644420708925,
+    "duration" : 12
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'edit-fail' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"",
+  "statusTrace" : "self = <interface.api_test.TestCase object at 0x0000027FDDE90348>\ntc = {'accept_type': 'text', 'expect': 'edit-fail', 'id': 46, 'method': 'post', ...}\n\n    @pytest.mark.parametrize(\"tc\", ParseXls(\"./data/case3.xls\").prepare_tc())\n    def test1(self, tc):\n        act = DoRequests().get_act(tc[\"precondition\"], tc[\"method\"], tc[\"url\"], tc[\"param\"], tc[\"accept_type\"])\n        expect = tc[\"expect\"]\n        if tc[\"accept_type\"] == \"json\":\n            assert act.get(expect[0]) == expect[1]\n        if tc[\"accept_type\"] == \"text\":\n>           assert expect in act\nE           assert 'edit-fail' in \"<html><head><title>500 Internal Server Error</title></head><body bgcolor='white'><center><h1>500 Internal Server Erro...enter><a href='http://www.jfinal.com?f=ev-3.2' target='_blank'><b>Powered by JFinal 3.2</b></a></center></body></html>\"\n\napi_test.py:18: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "api_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M8GO2TP"
+  }, {
+    "name" : "thread",
+    "value" : "69612-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "api_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "tc",
+    "value" : "{'id': 46, 'title': '【批次管理】（修改信息）缺少unitprice的参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/editgoods', 'param': {'goodsid': '259', 'goodsserial': 'ME42613', 'goodsname': '印花方巾', 'quantity': '188', 'totalprice': '588', 'costunitprice': '48.48', 'costtotalprice': '230.93'}, 'accept_type': 'text', 'expect': 'edit-fail'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dd9999b41ea5ed8c.json",
+  "parameterValues" : [ "{'id': 46, 'title': '【批次管理】（修改信息）缺少unitprice的参数', 'precondition': '已登录', 'method': 'post', 'url': 'http://localhost:8080/woniusales/goods/editgoods', 'param': {'goodsid': '259', 'goodsserial': 'ME42613', 'goodsname': '印花方巾', 'quantity': '188', 'totalprice': '588', 'costunitprice': '48.48', 'costtotalprice': '230.93'}, 'accept_type': 'text', 'expect': 'edit-fail'}" ]
+}
